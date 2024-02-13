@@ -86,7 +86,7 @@
     100% { transform: translateX(2.5%); }
 }
 
-
+/*hier weitermachen, funktioniert nocht nicht */
 @media (max-width: 480px) {
   #block {
     margin-left: 10%;
