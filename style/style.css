@@ -1,0 +1,225 @@
+@property --gradient-angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+:root {
+    --size: 1.2;
+    --clr-1:#751ee8;
+    --clr-2:#f89d4c;
+    --clr-3:#f3d239;
+    --clr-4:#f37056;
+    --clr-5:#f37056; 
+}
+
+.coding-font{
+    margin-top: 10px;
+    font-family: "Nanum Gothic Coding", monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    cursor: pointer;
+  }
+
+/*background and font*/
+body {
+    background-color: #181818;
+    margin: 0; 
+    height: 100%; 
+    overflow: hidden
+}
+.logo-home{
+    position:fixed;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
+  /*header row about, etc */
+#about{
+    font-size: 120%;
+    margin-top: 1%;
+    display:inline-block;    
+    margin-left: 76%;
+    margin-bottom: 7%;
+}
+#about:hover{
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #f8cb00,
+        0 0 42px rgb(238, 202, 3),
+        0 0 82px rgb(255, 225, 0),
+        0 0 92px rgb(246, 210, 7),
+        0 0 102px rgb(255, 230, 0),
+        0 0 151px rgb(255, 230, 0);
+}
+#projects{
+    font-size: 120%;
+    display:inline-block;
+    margin-left: 2%;
+}
+#projects:hover{
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #f8cb00,
+        0 0 42px rgb(238, 202, 3),
+        0 0 82px rgb(255, 225, 0),
+        0 0 92px rgb(246, 210, 7),
+        0 0 102px rgb(255, 230, 0),
+        0 0 151px rgb(255, 230, 0);
+}
+
+
+#connect{
+    font-size: 120%;
+    display:inline-block;
+    margin-left: 2%;
+
+}
+
+#connect:hover{
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #f8cb00,
+        0 0 42px rgb(238, 202, 3),
+        0 0 82px rgb(255, 225, 0),
+        0 0 92px rgb(246, 210, 7),
+        0 0 102px rgb(255, 230, 0),
+        0 0 151px rgb(255, 230, 0);
+}
+
+#help{
+    font-size: 120%;
+    display:inline-block;  
+    margin-left:2%; 
+}
+
+#help:hover{
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #f8cb00,
+        0 0 42px rgb(238, 202, 3),
+        0 0 82px rgb(255, 225, 0),
+        0 0 92px rgb(246, 210, 7),
+        0 0 102px rgb(255, 230, 0),
+        0 0 151px rgb(255, 230, 0);
+}
+
+
+/*cmd design here*/
+
+.term{
+    height: 93%;
+    margin:auto;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px; 
+    position: relative;
+}
+
+/*terminal border raindbow*/
+.termIn{
+    height: 60%;
+    width: 50%;
+    margin: auto;
+    border-radius: 15px;
+    position:relative;
+}
+
+.termIn::before,
+.termIn::after{
+    content: "";
+    position: absolute;
+    inset:-0.5rem;
+    z-index: -1;
+    background: conic-gradient(
+        from var(--gradient-angle),
+        var(--clr-3),
+        var(--clr-4),
+        var(--clr-1),
+        var(--clr-4),
+        var(--clr-3));
+        border-radius: inherit;
+        animation: rotation 10s linear infinite;
+    ;
+}
+.termIn::after {
+    filter: blur(3.5rem)
+}
+
+
+#term-top{
+    height: 7%;
+    margin: auto;
+    background-color: #343433;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#folder{
+    margin-top: 0.4%;
+    margin-left: 35%;
+}
+
+#green{
+    height: 15px;
+    width: 15px;
+    background-color: #27c83d;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 0.7%;
+    margin-left: 0.5%;
+}
+
+#yellow{
+    height: 15px;
+    width: 15px;
+    background-color: #feba2b;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 0.7%;
+    margin-left: 0.5%;
+}
+
+#red{
+    height: 15px;
+    width: 15px;
+    background-color: #fd5e5b;
+    margin-bottom: 0.7%;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 2%;
+}
+
+@keyframes rotation {
+    0% {--gradient-angle: 0deg;}
+    100% {--gradient-angle: 360deg;}
+}
+
+
+@media screen and (min-width: 1200px) {
+    :root {
+        --size: 1.4;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    #about{
+        font-size: 120%;
+        margin-top: 1%;
+        display:inline-block;    
+        margin-left: 35%;
+        margin-bottom: 7%;
+    }
+    #folder{
+        margin-top: 0.2%;
+        margin-left: 34%;
+    }
+}
