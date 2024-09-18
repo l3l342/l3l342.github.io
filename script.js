@@ -87,4 +87,3 @@ function viewalert(x) {
         alert('Hello, this website is designed for desktop browsers. We detect that you using an mobile browser, thatswhy the website will not look great. If you can, come back later on a desktop device')
     }
 }
-
