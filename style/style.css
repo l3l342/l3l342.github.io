@@ -1,3 +1,5 @@
+/*written by Ben D*/
+
 @property --gradient-angle {
     syntax: "<angle>";
     initial-value: 0deg;
@@ -203,14 +205,10 @@ body {
     100% {--gradient-angle: 360deg;}
 }
 
-
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1350px) {
     :root {
         --size: 1.4;
     }
-}
-
-@media screen and (max-width: 1350px) {
     #about{
         font-size: 120%;
         margin-top: 1%;
@@ -223,3 +221,8 @@ body {
         margin-left: 34%;
     }
 }
+
+
+
+    
+
