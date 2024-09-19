@@ -5,13 +5,13 @@ const theme1 = document.querySelector(".theme-link");
 
 btn.addEventListener("click", function() {
   // wenn die momentane url style/style.css ist
-  if (theme1.getAttribute("href") == "/style/style.css") {
+  if (theme1.getAttribute("href") == "https://l3l342.github.io/Newspage/style/style.css") {
     // ...but use .dark-mode if the .light-mode class is already on the body,
     var theme = "dark";
     location.reload();
   } else {
     // ... switch zu lightmode
-    theme1.href = "/style/style.css";
+    theme1.href = "https://l3l342.github.io/Newspage/style/style.css";
     var theme = "light";
     location.reload();
   }
@@ -24,9 +24,9 @@ const currentTheme = localStorage.getItem("theme");
 // If the user's preference in localStorage is dark...
 if (currentTheme == "dark") {
   // ...let's toggle the .dark-theme class on the body
-  theme1.href = "/style/style_dark.css";
+  theme1.href = "https://l3l342.github.io/Newspage/style/style_dark.css";
 // Otherwise, if the user's preference in localStorage is light...
 } else if (currentTheme == "light") {
   // ...let's toggle the .light-theme class on the body
-  theme1.href = "/style/style.css";
+  theme1.href = "https://l3l342.github.io/Newspage/style/style.css";
 }
