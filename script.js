@@ -1,5 +1,10 @@
 //written by Ben D. (not cleanest code sry)
 
+//current time 
+let now = new Date();
+let hours = now.getHours();
+let minutes = now.getMinutes();
+
 // useable commands in termianl
 const checker = function() {
     let check = false;
@@ -22,16 +27,16 @@ const commands = {
         term.echo(args.join(' '));
     }, 
     time () {
-        term.echo('13:12 its always 13:12');
+        term.echo(`Current Time: ${hours}:${minutes}`);
     },
     about() {
-        term.echo('\nHello my Name is Ben and im a Software Developer from Germany :)\nIm 19 years old and live near Hamburg, Germany. I like to see new places and learn new things.\n\nRecently I graduated from high school and in the moment I try to do things that \nseem important to me. For example supporting my family with cooking or working to get some money to see the world. \n\nOn this page you will see almost only my IT background, thats why I \nwill tell you now my interests besides IT: \nI really like to play Video games (Valorant, Minecraft, Csgo). \nCooking is one of my favourite Hobbies, my family and friends can approve of my \nfood :). Furthermore Im a very social person, thats why I like to have people \naround me and hang out. Maybe thats why my family and friends say I get along with everybody.\n\nTo see a more IT about page you can type [[;white;]"skills"] to see a overview of my skills');
+        term.echo('\nHello my Name is Ben and im a Software Developer from Germany :)\nIm 19 years old and live near Hamburg, Germany. I like to see new places and learn new things.\n\nRecently I graduated from high school and in the moment I try to do things that \nseem important to me. For example supporting my family or working to get money to see the world. \n\nOn this page you will see almost only my IT background, thats why I \nwill tell you now my interests besides IT: \nI really like to play Video games (Valorant, Minecraft, Csgo). \nCooking is one of my favourite Hobbies, my family and friends can approve :). \n Furthermore Im a very social person, thats why I like to have people \naround me and hang out. Maybe thats why my family and friends say I get along with everybody.\n\n Type [[;white;]"skills"] to view my IT skills :)');
     },
     hello() {
         term.echo(greetings);
     },
     projects() {
-        term.echo('\n [[;white;]My projects]:\n +++ please check out my [[!;;;;https://github.com/l3l342]Github] for all projects +++\n +++ or type [[;white;]"skills"] to see a overview of my skills +++ \n\n 🔫 [[!;;;;https://github.com/l3l342/Better-Buff ]Better Buff] 🔫\nBetter Buff is a Windows-App where you can compare csgo item prices on different \nwebsites. The websites buff, skinport and steam will be compared. The application is written in python and uses the library of customtkinter. Feel free to download and try, but read the instructions carefully on github :) \n\n 📰 [[!;;;;https://l3l342.github.io/Newspage/]Newspage] 📰\nFor a school project I created a Newspaper website for an imaginary publisher. It was one of my first projects and I learned very much about html, css and js. Feel free to [[!;;;;https://l3l342.github.io/Newspage/]visit]\n\n 🌎 [[!;;;;https://github.com/l3l342/IP-Geolocation-Map]Ip geolocation mapper] 🌎\nView where your internet traffic is going. You can see on an interactive map where the servers that your PC interacts with are located.');
+        term.echo('\n [[;white;]My projects]:\n +++ please check out my [[!;;;;https://github.com/l3l342]Github] for all projects +++\n +++ or type [[;white;]"skills"] to see a overview of my skills +++ \n\n 🔫 [[!;;;;https://github.com/l3l342/Better-Buff ]Better Buff] 🔫\nBetter Buff is a Windows-App where you can compare csgo item prices on different \nwebsites. The websites buff, skinport and steam will be compared. The application is written in python and uses the library of customtkinter. Feel free to download and try, but read the instructions carefully on github :) \n\n 📰 [[!;;;;https://l3l342.github.io/Newspage/]Newspage] 📰\nFor a school project I created a Newspaper website for an imaginary publisher. It was one of my first projects and I learned much about html, css and js. Feel free to [[!;;;;https://l3l342.github.io/Newspage/]visit]\n\n 🌎 [[!;;;;https://github.com/l3l342/IP-Geolocation-Map]Ip geolocation mapper] 🌎\nView where your internet traffic is going. You can see on an interactive map where the servers that your PC interacts with are located.');
     },
     connect(){
         term.echo(`\n [[;white;]Connect with me]:\n 📧 E-mail - [[!;;;;mailto:${mail}?subject=Subject&body=message%20goes%20here]ben.drtt(at)protonmail.com] or type [[;white;]"mail"] 📧 \n 👾 Github - https://github.com/l3l342/ 👾 \n 🎸 Soundcloud - https://on.soundcloud.com/TofwycUwUog5uSFD8 🎸\n`);
@@ -40,7 +45,8 @@ const commands = {
         window.location.href = `mailto:${mail}?subject=Subject&body=message%20goes%20here`;;
     },
     skills(){
-        term.echo(' [[;white;]Languages]:\n 🇩🇪 German - native speaker 🇩🇪\n 🇬🇧 English - B2 level 🇬🇧\n\n [[;white;]Programming Languages]:\n 🐍 Python - high-level 🐍 \n ☕  javascript - decent-level ☕️ \n 💻 C - intermediate-level 💻 \n 👾 C++, C# - basic-level 👾\n\n [[;white;]Other]:\n 📝 html/css - decent-level 📝\n 🌎 basic understanding of networks and computer systems 🌎\n 💿 academic knowledge of databases 💿\n 🧮 very good knowledge of programming concepts and algorithms 🧮')
+        term.echo(' [[;white;]Languages]:\n 🇩🇪 German - native speaker 🇩🇪\n 🇬🇧 English - B2 level 🇬🇧\n\n [[;white;]Programming Languages]:\n 🐍 Python - high-level 🐍 \n ☕  javascript - decent-level ☕️ \n 💻 C - intermediate-level 💻 \n 👾 C++, C# - basic-level 👾\n\n [[;white;]Other]:\n 📝 html/css - decent-level 📝\n 🌎 high understanding of networks and computer systems 🌎\n 💿 academic knowledge of databases 💿\n 🧮 very good knowledge of programming concepts and algorithms 🧮 \n Type [[;white;]"projects"] to see a overview of my projects');
+    },')
     },
     test(){
         term.echo('[[;white;]hello world]')
