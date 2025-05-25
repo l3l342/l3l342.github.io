@@ -12,7 +12,6 @@ const checker = function() {
     return check;
   };
 const check = checker();
-console.log(check);
   if (check === true) {
     alert('Hello, this website is designed for desktop browsers. We detect that you using a mobile browser, therefore the website will not look great. If you can, come back later on a desktop device'); 
   }
@@ -20,7 +19,7 @@ console.log(check);
 const mail = "ben.drtt[at]protonamil.com".replace("[at]", "@");
 const commands = {    
     help() {
-        term.echo(`Available commands: ${help}`);
+        term.echo(`Available commands: ${help} \nGenereal Info:\nThis website is build like a terminal window. I thought i could be a cool style \nfor my personal website, because the terminal brought me into coding and \nprogramming. I hope you get along with this different kind of website :)`);
 
     }, 
     echo(...args) {
@@ -30,13 +29,13 @@ const commands = {
         term.echo(`Current Time: ${hours}:${minutes}`);
     },
     about() {
-        term.echo('\nHello my Name is Ben and im a Software Developer from Germany :)\nIm 19 years old and live near Hamburg, Germany. I like to see new places and learn new things.\n\nRecently I graduated from high school and in the moment I try to do things that \nseem important to me. For example supporting my family or working to get money to see the world. \n\nOn this page you will see almost only my IT background, thats why I \nwill tell you now my interests besides IT: \nI really like to play Video games (Valorant, Minecraft, Csgo). \nCooking is one of my favourite Hobbies, my family and friends can approve :). \n Furthermore Im a very social person, thats why I like to have people \naround me and hang out. Maybe thats why my family and friends say I get along with everybody.\n\n Type [[;white;]"skills"] to view my IT skills :)');
+        term.echo('\nHello my Name is Ben and im a Hobby Software Developer from Germany :)\nIm 19 years old and live near Hamburg, Germany. I like to see new places and \nlearn new things.\n\nRecently I graduated from high school and in the moment I try to focus on things that seem important to me. For example supporting my family or working to get \nmoney to see the world. \n\nOn this page you will see almost only my IT background, thats why I will tell you now my interests besides IT: \n- I really like to play Video games (Valorant, Minecraft, Csgo). \n- Cooking is one of my favourite Hobbies, my family and friends can approve :). \n- Furthermore I´m a very social person, thats why I like to have people around me and hang out. Maybe thats why my family and friends say I get along with \neverybody.\n\n Type [[;white;]"skills"] to view my IT skills :)');
     },
     hello() {
         term.echo(greetings);
     },
     projects() {
-        term.echo('\n [[;white;]My projects]:\n +++ please check out my [[!;;;;https://github.com/l3l342]Github] for all projects +++\n +++ or type [[;white;]"skills"] to see a overview of my skills +++ \n\n 🔫 [[!;;;;https://github.com/l3l342/Better-Buff ]Better Buff] 🔫\nBetter Buff is a Windows-App where you can compare csgo item prices on different \nwebsites. The websites buff, skinport and steam will be compared. The application is written in python and uses the library of customtkinter. Feel free to download and try, but read the instructions carefully on github :) \n\n 📰 [[!;;;;https://l3l342.github.io/Newspage/]Newspage] 📰\nFor a school project I created a Newspaper website for an imaginary publisher. It was one of my first projects and I learned much about html, css and js. Feel free to [[!;;;;https://l3l342.github.io/Newspage/]visit]\n\n 🌎 [[!;;;;https://github.com/l3l342/IP-Geolocation-Map]Ip geolocation mapper] 🌎\nView where your internet traffic is going. You can see on an interactive map where the servers that your PC interacts with are located.');
+        term.echo('\n [[;white;]My projects]:\n +++ please check out my [[!;;;;https://github.com/l3l342]Github] for all projects +++\n\n 🔫 [[!;;;;https://github.com/l3l342/Better-Buff ]Better Buff] 🔫\nBetter Buff is a Windows-App where you can compare csgo item prices on different \nwebsites. The websites buff, skinport and steam will be compared. The application is written in python and uses the library of customtkinter. Feel free to \ndownload and try, but read the instructions carefully on github :) \n\n 📰 [[!;;;;https://l3l342.github.io/Newspage/]Newspage] 📰\nFor a school project I created a Newspaper website for an imaginary publisher. It was one of my first projects and I learned much about html, css and js. \nFeel free to [[!;;;;https://l3l342.github.io/Newspage/]visit]\n\n 🌎 [[!;;;;https://github.com/l3l342/IP-Geolocation-Map]Ip geolocation mapper] 🌎\nView where your internet traffic is going. You can see on an interactive map where the servers that your PC interacts with are located.');
     },
     connect(){
         term.echo(`\n [[;white;]Connect with me]:\n 📧 E-mail - [[!;;;;mailto:${mail}?subject=Subject&body=message%20goes%20here]ben.drtt(at)protonmail.com] or type [[;white;]"mail"] 📧 \n 👾 Github - https://github.com/l3l342/ 👾 \n 🎸 Soundcloud - https://on.soundcloud.com/TofwycUwUog5uSFD8 🎸\n`);
@@ -45,8 +44,7 @@ const commands = {
         window.location.href = `mailto:${mail}?subject=Subject&body=message%20goes%20here`;;
     },
     skills(){
-        term.echo(' [[;white;]Languages]:\n 🇩🇪 German - native speaker 🇩🇪\n 🇬🇧 English - B2 level 🇬🇧\n\n [[;white;]Programming Languages]:\n 🐍 Python - high-level 🐍 \n ☕  javascript - decent-level ☕️ \n 💻 C - intermediate-level 💻 \n 👾 C++, C# - basic-level 👾\n\n [[;white;]Other]:\n 📝 html/css - decent-level 📝\n 🌎 high understanding of networks and computer systems 🌎\n 💿 academic knowledge of databases 💿\n 🧮 very good knowledge of programming concepts and algorithms 🧮 \n Type [[;white;]"projects"] to see a overview of my projects');
-    },')
+        term.echo(' [[;white;]Languages]:\n 🇩🇪 German - native speaker 🇩🇪\n 🇬🇧 English - B2 level 🇬🇧\n\n [[;white;]Programming Languages]:\n 🐍 Python - high-level 🐍 \n ☕  javascript - decent-level ☕️ \n 💻 C - intermediate-level 💻 \n 👾 C++, C# - basic-level 👾\n\n [[;white;]Other]:\n 📝 html/css - decent-level 📝\n 🌎 high understanding of networks and computer systems 🌎\n 💿 academic knowledge of databases 💿\n 🧮 very good knowledge of programming concepts and algorithms 🧮 \n\nType [[;white;]"projects"] to see a overview of my projects');
     },
     test(){
         term.echo('[[;white;]hello world]')
@@ -54,7 +52,7 @@ const commands = {
 };
 
 //greeting slogan
-const greetings='\r\n                            )      (      (\r\n                           (        ))     )\r\n                    )       )      \/\/     (\r\n               _   (        __    (     ~->>\r\n        ,-----\' |__,_~~___<\'__`)-~__--__-~->> <\r\n        | \/\/  : | -__   ~__ o)____)),__ - \'> >-  >\r\n        | \/\/  : |- \\_ \\ -\\_\\ -\\ \\ \\ ~\\_  \\ ->> - ,  >>\r\n        | \/\/  : |_~_\\ -\\__\\ \\~\'\\ \\ \\, \\__ . -<-  >>\r\n        `-----._| `  -__`-- - ~~ -- ` --~> >\r\n         _\/___\\_    \/\/)_`\/\/  | ||]\r\n   _____[_______]_[~~-_ (.L_\/  ||\r\n  [____________________]\' `\\_,\/\'\/\r\n    ||| \/          |||  ,___,\'.\/\r\n    ||| \\          |||,\'______|\r\n    ||| \/          \/|| I==||\r\n    ||| \\       __\/_||  __||__\r\n-----||-\/------`-._\/||-o--o---o---\r\n  ~~~~~\'\r\nFor help type \'help\' in the terminal :)'
+const greetings='\r\n                            )      (      (\r\n                           (        ))     )\r\n                    )       )      \/\/     (\r\n               _   (        __    (     ~->>\r\n        ,-----\' |__,_~~___<\'__`)-~__--__-~->> <\r\n        | \/\/  : | -__   ~__ o)____)),__ - \'> >-  >\r\n        | \/\/  : |- \\_ \\ -\\_\\ -\\ \\ \\ ~\\_  \\ ->> - ,  >>\r\n        | \/\/  : |_~_\\ -\\__\\ \\~\'\\ \\ \\, \\__ . -<-  >>\r\n        `-----._| `  -__`-- - ~~ -- ` --~> >\r\n         _\/___\\_    \/\/)_`\/\/  | ||]\r\n   _____[_______]_[~~-_ (.L_\/  ||\r\n  [____________________]\' `\\_,\/\'\/\r\n    ||| \/          |||  ,___,\'.\/\r\n    ||| \\          |||,\'______|\r\n    ||| \/          \/|| I==||\r\n    ||| \\       __\/_||  __||__\r\n-----||-\/------`-._\/||-o--o---o---\r\n  ~~~~~\'\r\nThis website works only interactive with you! \nTry it and type [[;white;]"help"] in the terminal or click at the [[;white;]top right] on the [[;white;]text]...'
 
 function prompt() {
     return (`[[;yellow;]guest[[;white;]@]127.0.0.1] [[;blue;]~] [[;yellow;]%] `);
