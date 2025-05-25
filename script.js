@@ -68,7 +68,7 @@ const term = $('.term').terminal(commands, {
 });
 
 //command list after help
-const help = '\n\n general:\n hello - welcome screen\n clear - clear terminal output\n echo - print whats after echo\n help - you know what this does\n time - the time\n\n personal\n about - few things about me :)\n projects - my projects\n contact - how to contact me\n'
+const help = '\n\n general:\n hello - welcome screen\n clear - clear terminal output\n echo - print whats after echo\n help - you know what this does\n time - the time\n\n personal\n about - few things about me :)\n projects - my projects\n connect - how to contact me\n'
 
 // make the text clickable
 document.getElementById('about').addEventListener("click", function() {
